@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/za-jana-frontend/static/css/main.14028ebd.css",
+    "main.js": "/za-jana-frontend/static/js/main.652adf0c.js",
+    "index.html": "/za-jana-frontend/index.html",
+    "main.14028ebd.css.map": "/za-jana-frontend/static/css/main.14028ebd.css.map",
+    "main.652adf0c.js.map": "/za-jana-frontend/static/js/main.652adf0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14028ebd.css",
+    "static/js/main.652adf0c.js"
+  ]
+}
