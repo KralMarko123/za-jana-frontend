@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 :root {
-	/** TEXT **/
-	--main-font: "Lalezar", cursive;
-	--base-font-size: 18px;
-	--text-color: #fff;
-	--heading-color: var(--main-dark);
+  /** TEXT **/
+  --main-font: 'Lalezar', cursive;
+  --base-font-size: 18px;
+  --text-color: #fff;
+  --heading-color: var(--main-dark);
 
-	/** COLORS **/
-	--main-dark: #10192b;
-	--main-light: #ca5b90;
-	--main-accent: #5c90b5;
+  /** COLORS **/
+  --main-dark: #10192b;
+  --main-light: #ca5b90;
+  --main-accent: #5c90b5;
+
+  /** UTILITIES **/
+  --light-border: solid 0.5em var(--main-light);
 }
