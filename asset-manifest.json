@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/za-jana-frontend/static/css/main.d1c2196c.css",
-    "main.js": "/za-jana-frontend/static/js/main.79425027.js",
+    "main.css": "/za-jana-frontend/static/css/main.5dc6c1c1.css",
+    "main.js": "/za-jana-frontend/static/js/main.388dc7ce.js",
     "static/media/logo_pink.png": "/za-jana-frontend/static/media/logo_pink.53d964da2ccfcabe201f.png",
     "static/media/icon-white.png": "/za-jana-frontend/static/media/icon-white.f35f8f36cfc3795c32c7.png",
     "static/media/logo_text_white.png": "/za-jana-frontend/static/media/logo_text_white.a652859cfab02c8bbcd4.png",
     "index.html": "/za-jana-frontend/index.html",
-    "main.d1c2196c.css.map": "/za-jana-frontend/static/css/main.d1c2196c.css.map",
-    "main.79425027.js.map": "/za-jana-frontend/static/js/main.79425027.js.map"
+    "main.5dc6c1c1.css.map": "/za-jana-frontend/static/css/main.5dc6c1c1.css.map",
+    "main.388dc7ce.js.map": "/za-jana-frontend/static/js/main.388dc7ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1c2196c.css",
-    "static/js/main.79425027.js"
+    "static/css/main.5dc6c1c1.css",
+    "static/js/main.388dc7ce.js"
   ]
 }
