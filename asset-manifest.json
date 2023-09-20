@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.13c8e26d.css",
-    "main.js": "./static/js/main.e50cf02a.js",
-    "static/media/logo_pink.png": "./static/media/logo_pink.53d964da2ccfcabe201f.png",
-    "static/media/icon-white.png": "./static/media/icon-white.f35f8f36cfc3795c32c7.png",
-    "static/media/logo_text_white.png": "./static/media/logo_text_white.a652859cfab02c8bbcd4.png",
-    "index.html": "./index.html",
-    "main.13c8e26d.css.map": "./static/css/main.13c8e26d.css.map",
-    "main.e50cf02a.js.map": "./static/js/main.e50cf02a.js.map"
+    "main.css": "/za-jana-frontend/static/css/main.d1c2196c.css",
+    "main.js": "/za-jana-frontend/static/js/main.79425027.js",
+    "static/media/logo_pink.png": "/za-jana-frontend/static/media/logo_pink.53d964da2ccfcabe201f.png",
+    "static/media/icon-white.png": "/za-jana-frontend/static/media/icon-white.f35f8f36cfc3795c32c7.png",
+    "static/media/logo_text_white.png": "/za-jana-frontend/static/media/logo_text_white.a652859cfab02c8bbcd4.png",
+    "index.html": "/za-jana-frontend/index.html",
+    "main.d1c2196c.css.map": "/za-jana-frontend/static/css/main.d1c2196c.css.map",
+    "main.79425027.js.map": "/za-jana-frontend/static/js/main.79425027.js.map"
   },
   "entrypoints": [
-    "static/css/main.13c8e26d.css",
-    "static/js/main.e50cf02a.js"
+    "static/css/main.d1c2196c.css",
+    "static/js/main.79425027.js"
   ]
 }
