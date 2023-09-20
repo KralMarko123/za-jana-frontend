@@ -21,6 +21,10 @@
   color: var(--text-color);
 }
 
+.form-input.error {
+  outline: solid 2px var(--danger);
+}
+
 .form-input:focus {
   outline: solid 2px var(--main-light);
 }

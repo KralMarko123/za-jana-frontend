@@ -1,18 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router';
+import UsersService from '../../../api/UserService';
+import { useAuth } from '../../../hooks/useAuth';
+import { isNonEmptyString } from '../../../util/helperFunctions';
+import { ROUTES } from '../../../constants/ROUTES';
 import '../Form.css';
 import './LoginForm.css';
 
 const LoginForm = () => {
+  const { login } = useAuth();
   const [loginData, setLoginData] = useState({
-    username: null,
-    password: null
+    username: '',
+    password: ''
   });
+  const usernameRef = useRef();
+  const passwordRef = useRef();
+  const navigate = useNavigate();
 
-  const onLogin = (e) => {
+  const noEmptyFields = () => {
+    return Object.values(loginData).every((v) => isNonEmptyString(v));
+  };
+
+  const checkErrors = () => {
+    if (loginData.username.length === 0)
+      usernameRef.current.classList.add('error');
+    else usernameRef.current.classList.remove('error');
+
+    if (loginData.password.length === 0)
+      passwordRef.current.classList.add('error');
+    else passwordRef.current.classList.remove('error');
+  };
+
+  const onLogin = async (e) => {
     e.preventDefault();
-    console.log(`Logging in with the following:
-    Username: ${loginData.username}
-    Password: ${loginData.password}`);
+    checkErrors();
+
+    if (noEmptyFields()) {
+      await UsersService.authenticate(loginData).then((response) =>
+        login(response.jwtToken)
+      );
+    }
   };
 
   const onRegisterLink = () => {
@@ -30,6 +57,7 @@ const LoginForm = () => {
             className="form-input"
             type="text"
             id="username"
+            ref={usernameRef}
             onChange={(e) =>
               setLoginData({
                 ...loginData,
@@ -46,6 +74,7 @@ const LoginForm = () => {
           <input
             className="form-input"
             type="text"
+            ref={passwordRef}
             id="password"
             onChange={(e) =>
               setLoginData({
@@ -65,7 +94,7 @@ const LoginForm = () => {
         <div className="form-links">
           <div className="register-link">
             <p>Register {`->`}</p>
-            <span onClick={() => onRegisterLink()}></span>
+            <span onClick={() => navigate(ROUTES.REGISTER)}></span>
           </div>
         </div>
       </form>

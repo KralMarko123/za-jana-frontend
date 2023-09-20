@@ -4,6 +4,7 @@ import { ROUTES } from './constants/ROUTES';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 import { AuthProvider } from './hooks/useAuth';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           />
 
           <Route path={ROUTES.LOGIN} element={<Login />} />
+          <Route path={ROUTES.REGISTER} element={<Register />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>
