@@ -42,10 +42,6 @@ const LoginForm = () => {
     }
   };
 
-  const onRegisterLink = () => {
-    console.log('navigated to register page');
-  };
-
   return (
     <div className="form-container">
       <form action="POST" className="form login">

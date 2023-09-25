@@ -1,11 +1,4 @@
-.form.login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.register-link {
+.login-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +6,7 @@
   gap: 0.5em;
 }
 
-.register-link p {
+.login-link p {
   font-size: 1.5rem;
 
   color: var(--text-color);
@@ -22,7 +15,7 @@
   -webkit-text-stroke: 1px black;
 }
 
-.register-link span {
+.login-link span {
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -30,7 +23,7 @@
   border: solid 8px var(--main-light);
 }
 
-.register-link span:hover {
+.login-link span:hover {
   cursor: pointer;
   background-color: var(--main-light);
   border-color: var(--text-color);
